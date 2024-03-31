@@ -28,7 +28,7 @@ button {
     text-wrap: nowrap;
     font-family: Raleway, sans-serif; /* Если не прописываю здесь дополнительно свойства шрифта, шрифт слетает */
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 li {
@@ -273,21 +273,15 @@ li {
 }
 
 .cards-item-film {
-    background-image:
-    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url(../images/card-lot-01.jpg); 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/card-lot-01.jpg);
 }
 
 .cards-item-book {
-    background-image:
-    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url(../images/card-lot-02.jpg);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/card-lot-02.jpg);
 }
 
 .cards-item-paint {
-    background-image:
-    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url(../images/card-lot-03.jpg);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/card-lot-03.jpg);
 }
 
 .lots-cards-item-text {
