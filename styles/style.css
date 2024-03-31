@@ -1,1 +1,354 @@
-/* место для вашего кода */
+body {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* ↓↓↓ Шапка ↓↓↓ */
+
+.header {
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 92px 24px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-menu {
+    flex-grow: 1;
+    gap: 12px;
+    padding-left: 26px;
+}
+
+.menu-item {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-bottom: solid 1px;
+}
+
+.menu-item-active {
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+.header-menu .menu-item-container:nth-child(2):before {
+    content: '';
+    display: inline-block;
+    margin: 0 8px 1px 0;
+    width: 7px;
+    height: 7px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+.header-menu .menu-item-container:nth-child(3):before {
+    content: '';
+    display: inline-block;
+    margin: 0 6px 1px 0;
+    width: 7px;
+    height: 7px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+.header-logo-container {
+    display: block;
+    width: 136px;
+    margin-right: 192px;
+}
+
+.header-logo {
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 237px;
+    list-style-type: none;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+    border: rgba(0,0,0,0);
+    text-wrap: nowrap;
+}
+
+.primary {
+    padding: 12px 32px;
+    border: solid 1px #FFF;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+.secondary {
+    border-bottom: solid 1px;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.tertiary {
+    border-bottom: solid 1px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 128%;
+    
+}
+
+.address {
+    text-decoration: none;
+    word-wrap: break-word;
+    line-height: 24.3px;
+}
+
+
+/* ↓↓↓ Заглавный экран ↓↓↓ */
+
+.title-screen {
+    display: flex;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    
+}
+
+.title-screen-container {
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    padding: 166px 50px 50px;
+}
+
+.title-screen-call-out {
+    text-transform: uppercase;
+}
+
+.title-screen-call-out-text-block {
+    display: flex;
+    gap: 30px;
+}
+
+.call-out-span {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+}
+
+.text-center {
+    margin-top: 12px;
+    margin-left: 286px;
+    text-align: center;
+    line-height: 115%;
+}
+
+.text-right {
+    margin-top: 4px;
+    margin-left: 584px;
+    text-align: right;
+}
+
+.title-screen-tagline-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-left: 28px;
+}
+
+.title-screen-tagline {
+    display: block;
+    flex-grow: 1;
+    text-align-last: justify;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* ↓↓↓ Лоты ↓↓↓ */
+
+.lots {
+    padding: 181px 24px 156px;
+}
+
+.lots-h2 {
+    padding-left: 42px;
+}
+
+.h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.h3 {
+    flex-grow: 1;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.lots-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-top: 27px;
+    list-style: none;
+}
+
+.lots-cards-item-container {
+    display: flex;
+    min-width: 334px;
+    padding: 50px 40px 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lots-cards-item-container:nth-of-type(1) {
+    background-image:
+    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/card-lot-01.jpg);
+}
+
+.lots-cards-item-container:nth-of-type(2) {
+    background-image:
+    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/card-lot-02.jpg);
+}
+
+.lots-cards-item-container:nth-of-type(3) {
+    background-image:
+    linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../images/card-lot-03.jpg);
+}
+
+.lots-cards-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.lots-cards-item-text {
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFF;
+}
+
+.lots-button-container {
+    display: flex;
+    padding: 30px 0 0 40px;
+}
+
+
+/* ↓↓↓ Об аукционе ↓↓↓ */
+
+.about {
+    width: 100%;
+}
+
+.about-container {
+    display: grid; /*Попробовал из любопытства. Так-то для консистентности лучше было бы использовать flex*/
+    grid-template-columns: 1fr 2fr;
+    padding: 26px 24px 0 24px;
+}
+
+.about-logo-wht-container {
+    display: block;
+    margin-left: 48px;
+    padding: 46px;
+    background: #000;
+    clip-path: circle(50%);
+    height: 240px;
+    width: 240px;
+}
+
+.about-logo-wht {
+    display: block;
+    padding-top: 18px;
+}
+
+.about-txt-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0 10px;
+}
+
+.about-txt-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 100px;
+}
+
+.about-txt-item {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+
+/* ↓↓↓ Футер ↓↓↓ */
+
+.footer {
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 180px 50px;
+}
+
+.footer-menu {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 42px;
+
+}
+
+.social-container {
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+}
+
+.social-button {
+    display: block;
+    width: 48px;
+}
+
+.social-button-image {
+    display: block;
+    width: 100%;
+}
