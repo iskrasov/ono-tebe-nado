@@ -11,25 +11,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <nav class="menu-container">
-          <ul class="menu header-menu">
-            <li class="menu-item-container">
-              <a class="menu-item menu-item-active"
+      <div class="header__container">
+        <nav class="header__menu">
+          <ul class="header__links-list">
+            <li class="header__links-list-item header__links-list-item_no-bullit">
+              <a class="header__link_active"
               href="">главная</a>
             </li>
-            <li class="menu-item-container">
-              <a class="menu-item"
+            <li class="header__links-list-item">
+              <a class="header__link"
                  href="#">посмотреть лоты</a>
             </li>
-            <li class="menu-item-container">
-              <a class="menu-item"
+            <li class="header__links-list-item">
+              <a class="header__link"
                  href="#">об аукционе</a>
             </li>
           </ul>
         </nav>
-        <a class="header-logo-container"> <!-- На логотипе должна быть ссылка на Главную. На Главной она работать не должна. -->
-          <img class="header-logo"
+        <a class="header__logo"> <!-- На логотипе должна быть ссылка на Главную. На Главной она работать не должна. -->
+          <img class="header__logo-image"
           src="./images/logo-black.svg"
           alt="логотип Оно тебе надо. Перейти на Главную.">
         </a>
@@ -44,48 +44,48 @@
       </div>
     </header>
     <main>
-      <section class="title-screen">
-        <div class="title-screen-container">
-          <h1 class="h1">
-            <span class="call-out call-out-extra-line-height">О<span class="call-out-extra-spacing">но</span></span>
-            <span class="call-out call-out-center">Те<span class="call-out-extra-spacing">бе</span></span>
-            <span class="call-out call-out-right"><span class="call-out-extra-spacing">Н</span>ад<span class="call-out-no-spacing">о</span></span>
+      <section class="cover">
+        <div class="cover-container">
+          <h1 class="cover__title">
+            <span class="title-extra-line-height">О<span class="title-extra-spacing">но</span></span>
+            <span class="title-center">Те<span class="title-extra-spacing">бе</span></span>
+            <span class="title-right"><span class="title-extra-spacing">Н</span>ад<span class="title-no-spacing">о</span></span>
           </h1>
-          <div class="title-screen-tagline-container">
-            <p class="title-screen-tagline">Аукцион вещей, в которые никто не верил</p>
-            <button class="button primary">Сделать ставку</button>
+          <div class="cover__tagline-container">
+            <p class="tagline">Аукцион вещей, в которые никто не верил</p>
+            <button class="button bid-button" type="button">Сделать ставку</button>
           </div>
         </div>
       </section>
       <section class="lots">
-          <h2 class="h2 lots-h2">Лоты</h2>
+          <h2 class="h2 lots__heading">Лоты</h2>
           <ul class="lots-cards-container">
             <li class="lots-cards-item-container">
-              <a class="lots-cards-item-link" href="#">
+              <a class="card-link" href="#">
                 <article class="lots-cards-item cards-item-film">
-                  <h3 class="h3">Фильм режиссёра, который бросил киношколу</h3>
+                  <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                   <p class="lots-cards-item-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                 </article>
               </a>
             </li>
             <li class="lots-cards-item-container">
-              <a class="lots-cards-item-link" href="#">
+              <a class="card-link" href="#">
                 <article class="lots-cards-item cards-item-book">
-                  <h3 class="h3">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                  <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                   <p class="lots-cards-item-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
                 </article>
               </a>
             </li>
             <li class="lots-cards-item-container">
-              <a class="lots-cards-item-link" href="#">
+              <a class="card-link" href="#">
                 <article class="lots-cards-item cards-item-paint">
-                  <h3 class="h3">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                  <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                   <p class="lots-cards-item-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                 </article>
               </a>
             </li>
           </ul>
-          <a class="button secondary lots-button"
+          <a class="lots__look-more-link lots-button"
           href="#">посмотреть больше</a>
       </section>
       <section class="about">
@@ -116,17 +116,17 @@
           <p class="address">наб. Принсенграхт 263-<br>
           265, Амстердам</p>
         </address>
-        <nav class="menu-container">
-          <ul class="menu footer-menu">
-            <li class="menu-item-container">
-              <a class="menu-item menu-item-active">главная</a>
+        <nav class="footer__menu">
+          <ul class="footer__links-list">
+            <li class="footer__links-list-item">
+              <a class="footer__link footer__link_active">главная</a>
             </li>
-            <li class="menu-item-container">
-              <a class="menu-item"
+            <li class="footer__links-list-item">
+              <a class="footer__link"
                  href="#">посмотреть лоты</a>
             </li>
-            <li class="menu-item-container">
-              <a class="menu-item"
+            <li class="footer__links-list-item">
+              <a class="footer__link"
                  href="#">об аукционе</a>
             </li>
           </ul>
